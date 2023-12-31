@@ -16,6 +16,7 @@ class Auth:
         self.ssl_context: SSLContext | Literal[False] = False
 
     async def login(self) -> None:
+        """Login to the router with username and password. Receive a bauth cookie back to use as authentication for the session."""
         login_url = f"{self.host}/api/login"
         async with self.websession.post(
             login_url, data={"username": self.username, "password": self.password}, ssl=self.ssl_context,
