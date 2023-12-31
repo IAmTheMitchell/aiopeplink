@@ -1,4 +1,4 @@
-# aiounifi
+# aiopeplink
 Asynchronous library to communicate with Peplink routers
 
 ## Acknowledgements
