@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aiopeplink"
+version = "0.0.1"
+authors = [
+  { name="Mitchell Carlson", email="mitchell.carlson.pro@gmail.com" },
+]
+description = "An asynchronous library to communicate with Peplink routers"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/IAmTheMitchell/aiopeplink"
+Issues = "https://github.com/IAmTheMitchell/aiopeplink/issues"
