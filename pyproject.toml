@@ -1,6 +1,6 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "aiopeplink"
@@ -16,7 +16,13 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+  "aiohttp"
+]
 
 [project.urls]
 Homepage = "https://github.com/IAmTheMitchell/aiopeplink"
 Issues = "https://github.com/IAmTheMitchell/aiopeplink/issues"
+
+[tool.setuptools.packages.find]
+include = ["aiopeplink*"]
