@@ -1,7 +1,7 @@
 from typing import List
 
-from interfaces.connectivity import Connectivity
-from models.info import Location
+from .interfaces.connectivity import Connectivity
+from .models.info import Location
 
 
 class PeplinkAPI:

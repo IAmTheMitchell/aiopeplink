@@ -1,6 +1,6 @@
 """Peplink info model."""
 
-from interfaces.connectivity import Connectivity
+from ..interfaces.connectivity import Connectivity
 
 
 class Location:
